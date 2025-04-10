@@ -26,13 +26,7 @@ class Solution(object):
             if rootX == rootY:
                 return False
 
-            if size[rootX] <= size[rootY]:
-                parent[rootX] = rootY
-                size[rootY] += size[rootX]
-            else:
-                parent[rootY] = rootX
-                size[rootX] += size[rootY]
-
+            parent[rootX] = rootY
             return True
 
         for u, v in edges:
