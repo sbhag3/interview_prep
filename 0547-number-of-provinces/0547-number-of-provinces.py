@@ -27,9 +27,8 @@ class Solution(object):
 
         for i in range(n):
             for j in range(i + 1, n):
-                if isConnected[i][j] and find(i) != find(j):
+                if isConnected[i][j] and union(i, j):
                     ans -= 1
-                    union(i, j)
 
         return ans
         
