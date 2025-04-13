@@ -7,6 +7,5 @@ class Solution:
             ans += (n & 1) << power
             n = n >> 1
             power -= 1
-            print(bin(ans))
         return ans
         
